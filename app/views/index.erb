@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>What up</title>
+
+  </head>
+  <body>
+
+      <% @article_all.each do |article| %>
+      <li> <%= article.title %> -
+       <%= article.content %> </li>
+      <% end %>
+
+      <form method="GET" action= "/articles/new">
+        <input type="submit" value="New Article" />
+
+  </body>
+</html>
